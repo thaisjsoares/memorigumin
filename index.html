@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+    <head>
+    
+        <meta charset="utf-8" />
+        
+        <title>Memorigu Min</title>
+        
+        <meta name="author" content="TJ Soares">
+	    <meta name="description" content="Lista de afazeres customizável.">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
+         
+        <link rel="stylesheet" href="style.css" />
+   
+    </head>
+    
+    <body>
+
+    <div id="content">
+    
+        <div id="list">
+            
+            <div id="title">
+                <h1><span id="written-title">Título da sua lista</span></h1>
+            </div>
+            
+            <div id="list-items">
+                <ul id="list-element"></ul>
+            </div>
+            
+            <div id="change-title">
+               <input id="new-title" type="text" maxlength="40" placeholder="Altere o título da sua lista"><button type="button" onclick="changeTitle()">OK</button>            
+            </div>
+            
+            <div id="add-item">   
+                <input id="add-to-list" type="text" maxlength="30" placeholder="Adicione um ítem à sua lista"><button type="button" onclick="addItem()">OK</button>
+            </div>
+            
+            <div id="save">   
+                <button type="button" onclick="saveList()">Salvar</button>
+                <button type="button" onclick="clean()">Limpar</button>
+            </div>
+            
+        </div>
+                   
+    </div>
+    
+    <script type="text/javascript" src="index.js"></script> 
+
+    </body>
+
+</html>
